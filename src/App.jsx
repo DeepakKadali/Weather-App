@@ -19,6 +19,7 @@ function App() {
       alert("Failed to fetch weather data");
       setIsApiLoading(false);
       setCity("");
+      setCityData("");
       console.log(error);
     }
   };
