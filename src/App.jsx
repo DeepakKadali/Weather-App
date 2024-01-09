@@ -27,6 +27,7 @@ function App() {
     <div className="main">
       <div className="input-container">
         <input
+          type="text"
           className="input"
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -37,23 +38,23 @@ function App() {
       </div>
       <div>{isApiLoading && <div>Loading Data...</div>}</div>
       {!isApiLoading && cityData && (
-        <div className="feature-container">
-          <div className="feature">
+        <div className="weather-card-container">
+          <div className="weather-card">
             <h2>Temparature</h2>
             <div>
               {cityData.current.temp_c}
               <sup>o</sup>C
             </div>
           </div>
-          <div className="feature">
+          <div className="weather-card">
             <h2>Humidity</h2>
             <div>{cityData.current.humidity}%</div>
           </div>
-          <div className="feature">
+          <div className="weather-card">
             <h2>Condition</h2>
             <div>{cityData.current.condition.text}</div>
           </div>
-          <div className="feature">
+          <div className="weather-card">
             <h2>Wind Speed</h2>
             <div>{cityData.current.wind_kph} kph</div>
           </div>
