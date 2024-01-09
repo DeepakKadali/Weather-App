@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  flex-direction: column;
+}
+input-container {
+  display: flex;
+  justify-content: center;
+}
+input {
+  padding: 15px;
+  border-radius: 5px;
+}
+button {
+  background-color: rgb(34, 179, 34);
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.feature-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  padding: 30px;
+}
+.feature {
+  /* background-attachment: white; */
+  display: flex;
+  min-width: 150px;
+  flex-direction: column;
+
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px lightblue;
+}
