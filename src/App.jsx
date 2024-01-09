@@ -36,9 +36,9 @@ function App() {
           Search
         </button>
       </div>
-      <div>{isApiLoading && <div>Loading Data...</div>}</div>
+      <div>{isApiLoading && <p>Loading data...</p>}</div>
       {!isApiLoading && cityData && (
-        <div className="weather-card-container">
+        <div className="weather-cards">
           <div className="weather-card">
             <h2>Temparature</h2>
             <div>

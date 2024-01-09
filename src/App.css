@@ -19,7 +19,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-.weather-card-container {
+.weather-cards {
   display: flex;
   gap: 30px;
   margin: 30px;
