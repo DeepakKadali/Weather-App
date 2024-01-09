@@ -16,7 +16,8 @@ function App() {
       setCityData(response.data);
       setIsApiLoading(false);
     } catch (error) {
-      alert("Failed to fetch weather data");
+      window.alert("Failed to fetch weather data");
+      // alert("Failed to fetch weather data");
       setIsApiLoading(false);
       setCity("");
       setCityData("");
