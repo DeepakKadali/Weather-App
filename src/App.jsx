@@ -10,14 +10,13 @@ function App() {
     setIsApiLoading(true);
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?q="${city}"&key=2a2bc82f88df41f089163800240901`
+        `https://api.weatherapi.com/v1/current.json?q=${city}&key=2a2bc82f88df41f089163800240901`
       );
       console.log(response);
       setCityData(response.data);
       setIsApiLoading(false);
     } catch (error) {
       window.alert("Failed to fetch weather data");
-      // alert("Failed to fetch weather data");
       setIsApiLoading(false);
       setCity("");
       setCityData("");
