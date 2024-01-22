@@ -10,7 +10,7 @@ function App() {
     setIsApiLoading(true);
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?q=${city}&key=2a2bc82f88df41f089163800240901`
+        `https://api.weatherapi.com/v1/current.json?key=2a2bc82f88df41f089163800240901&q=${city}`
       );
       console.log(response);
       setCityData(response.data);
